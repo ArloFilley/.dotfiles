@@ -34,7 +34,6 @@ createlink () {
 
 createlink  "gitconfig"   ".gitconfig"
 createlink  "zshrc"       ".zshrc"
-createlink  "sshconfig"   ".ssh/config"
 createlink  "helix"       ".config/helix"
 createlink  "freshfetch"  ".config/freshfetch"
 
