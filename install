@@ -31,15 +31,15 @@ cargo install speedtest-rs
 
 dotfiles_path=$HOME/.dotfiles
 
-createlink () {
-  if [[ ! -f $1 ]]; then
-    ln -s $dotfiles_path/$1 $HOME/$2
-  fi
-}
+# createlink () {
+  # if [[ ! -f $1 ]]; then
+    # ln -s $dotfiles_path/$1 $HOME/$2
+  # fi
+# }
 
-createlink  "gitconfig"   ".gitconfig"
-createlink  "zshrc"       ".zshrc"
-createlink  "helix"       ".config/helix"
-createlink  "freshfetch"  ".config/freshfetch"
+# createlink  "gitconfig"   ".gitconfig"
+# createlink  "zshrc"       ".zshrc"
+# createlink  "helix"       ".config/helix"
+# createlink  "freshfetch"  ".config/freshfetch"
 
-chsh nu
+sudo chsh arlo /Users/Arlo/.cargo/bin/nu
