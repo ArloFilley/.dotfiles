@@ -5,14 +5,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 source "$HOME/.cargo/env"
 
-# Install sccache
-cargo install sccache
-RUSTC_WRAPPER=sccache cargo build
-
 if command -v pacman
 then
   yes | sudo pacman -S pkg-config
 fi
+
+# Install sccache
+cargo install sccache
+RUSTC_WRAPPER=sccache cargo build
 
 # Install Programs
 cargo install nu
