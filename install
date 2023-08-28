@@ -11,8 +11,8 @@ then
 fi
 
 # Install sccache
-cargo install sccache
-RUSTC_WRAPPER=sccache cargo build
+# cargo install sccache
+# RUSTC_WRAPPER=sccache cargo build
 
 # Install Programs
 cargo install nu
