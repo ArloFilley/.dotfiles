@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+yes 1 | curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 source "$HOME/.cargo/env"
 
 if command -v pacman
 then
-  yes | sudo pacman -S pkg-config
+  yes | sudo pacman -S base-devel pkg-config
 fi
 
 # Install sccache
