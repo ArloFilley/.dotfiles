@@ -1,5 +1,27 @@
 #!/bin/sh
 
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Install sccache
+cargo install sccache
+RUSTC_WRAPPER=sccache cargo build
+
+# Install Programs
+cargo install nu
+cargo install coreutils
+cargo install starship
+cargo install exa
+cargo install du-dust
+cargo install bat
+cargo install zellij
+cargo install ripgrep
+cargo install helix
+cargo install bacon
+cargo install ncspot
+cargo install porsmo
+cargo install speedtest-rs
+
 dotfiles_path=$HOME/.dotfiles
 
 createlink () {
@@ -13,3 +35,5 @@ createlink  "zshrc"       ".zshrc"
 createlink  "sshconfig"   ".ssh/config"
 createlink  "helix"       ".config/helix"
 createlink  "freshfetch"  ".config/freshfetch"
+
+chsh nu
