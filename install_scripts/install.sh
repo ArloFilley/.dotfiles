@@ -7,7 +7,7 @@ source "$HOME/.cargo/env"
 
 if command -v pacman
 then
-  yes | sudo pacman -S base-devel pkg-config
+  yes | sudo pacman -S base-devel pkg-config cmake
 fi
 
 # Install sccache
@@ -31,19 +31,7 @@ cargo install speedtest-rs
 
 dotfiles_path=$HOME/.dotfiles
 
-# createlink () {
-  # if [[ ! -f $1 ]]; then
-    # ln -s $dotfiles_path/$1 $HOME/$2
-  # fi
-# }
-
-# createlink  "gitconfig"   ".gitconfig"
-# createlink  "zshrc"       ".zshrc"
-# createlink  "helix"       ".config/helix"
-# createlink  "freshfetch"  ".config/freshfetch"
-
 sudo ln -s /home/arlo/.cargo/bin/nu /usr/bin/nu
 echo /usr/bin/nu | sudo tee -a /etc/shells
 chsh -s /usr/bin/nu
-
 
