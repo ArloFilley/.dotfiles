@@ -1,2 +1,2 @@
 # Adds All Necessary Paths
-$env.PATH = ($env.PATH | append "some/other/path")
+$env.PATH = ($env.PATH | append "~/.cargo/bin")
