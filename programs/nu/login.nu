@@ -1,2 +1,2 @@
-source ~/.dotfiles/nu/path.nu
-source ~/.dotfiles/nu/aliases.nu
+source ~/.config/nushell/path.nu
+source ~/.config/nushell/aliases.nu
