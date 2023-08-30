@@ -16,7 +16,7 @@ cargo install zellij    # Terminal Multiplexer
 cargo install ripgrep   # Finding Utility
 
 ## Coding
-source ~/.dotfiles/programs/nvim/install_setup_nvim.nu  # Astro Nvim Install
+source ~/.dotfiles/programs/nvim/install_nvim.nu        # Astro Nvim Install
 cargo install bacon                                     # Rust Runner
 
 ## Prompt
@@ -29,7 +29,7 @@ cargo install porsmo
 cargo install speedtest-rs
 
 # Setup Programs
-source ~/.dotfiles/programs/git/setup_git.nu  # Git
+source ~/.dotfiles/programs/git/setup_git.nu            # Git
 
 # Source Aliases
 source ~/.dotfiles/programs/nu/aliases.nu
