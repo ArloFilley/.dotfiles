@@ -4,7 +4,7 @@
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Make Sure cargo is in path
-source "~/.cargo/env"
+source "$HOME/.cargo/env"
 
 # Install packages on arch needed to build nushell
 if command -v pacman
