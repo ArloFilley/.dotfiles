@@ -1,4 +1,4 @@
-## Source Aliases
+## Source Paths
 source ~/.dotfiles/programs/nu/path.nu
 
 # Install and Setup Programs
