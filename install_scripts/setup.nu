@@ -1,9 +1,3 @@
-# Link Cargo to User Installed Programs So That Their In $PATH
-sudo ln -s ~/.cargo/bin/	/usr/local/bin/
-
-# Link Nushell Config Files
-ln -s ~/.dotfiles/programs/nu/ ~/.config/nushell
-
 ## Source Aliases
 source ~/.dotfiles/programs/nu/path.nu
 
