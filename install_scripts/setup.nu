@@ -1,7 +1,7 @@
 # Link Cargo to User Installed Programs So That Their In $PATH
 sudo ln -s ~/.cargo/bin/	/usr/local/bin/
 
-# Link nu Config Files
+# Link Nushell Config Files
 ln -s ~/.dotfiles/programs/nu/ ~/.config/nushell
 
 ## Source Aliases
@@ -17,7 +17,7 @@ cargo install ripgrep   # Finding Utility
 
 ## Coding
 source ~/.dotfiles/programs/nvim/install_setup_nvim.nu  # Astro Nvim Install
-cargo install bacon                               # Rust Runner
+cargo install bacon                                     # Rust Runner
 
 ## Prompt
 cargo install starship
@@ -35,4 +35,4 @@ source ~/.dotfiles/programs/git/setup_git.nu  # Git
 source ~/.dotfiles/programs/nu/aliases.nu
 
 # Set IP env variable and request a dns name, that can then be used as hostname
-source ~/.dotfiles/install_scripts/get_hostname.nu
+source get_hostname.nu

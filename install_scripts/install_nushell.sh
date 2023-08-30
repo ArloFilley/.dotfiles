@@ -14,5 +14,6 @@ fi
 
 # Install Nushell
 cargo install nu --locked --features=dataframe
+echo "Nushell Built"
 nu install_nushell.nu
-nu setup_nushell.nu
+nu setup.nu
