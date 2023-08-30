@@ -14,7 +14,12 @@ source ~/.dotfiles/programs/nvim/install_nvim.nu        # Astro Nvim Install
 cargo install bacon                                     # Rust Runner
 
 ## Prompt
-cargo install starship
+try {
+  cargo install starship
+} catch {
+  echo "error installing starship"
+}
+
 cargo install cutefetch
 
 ## Fun
