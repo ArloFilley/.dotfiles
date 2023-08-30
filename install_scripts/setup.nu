@@ -1,7 +1,6 @@
 # Link Cargo to User Installed Programs So That Their In $PATH
 ln -s ~/.cargo/bin/	/usr/local/bin/
 
-
 # Useful Variable Paths
 const nu_path         = ~/.dotfiles/programs/nu
 const nu_config_path  = ~/.config/nushell
@@ -44,3 +43,6 @@ source $programs_path/git/setup_git.nu  # Git
 
 # Source Aliases
 source $nu_path/aliases.nu
+
+# Set IP env variable and request a dns name, that can then be used as hostname
+source ~/.dotfiles/install_scripts/get_hostname.nu
