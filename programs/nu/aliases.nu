@@ -1,1 +1,1 @@
-echo hi
+export alias speedtest = speedtest-rs

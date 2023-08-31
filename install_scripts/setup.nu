@@ -34,4 +34,6 @@ source ~/.dotfiles/programs/git/setup_git.nu            # Git
 source ~/.dotfiles/programs/nu/aliases.nu
 
 # Set IP env variable and request a dns name, that can then be used as hostname
-source get_hostname.nu
+source setup_dns.nu                                     # Set Correct DNS Server
+source get_hostname.nu                                  # Get Hostname
+source ~/.dotfiles/programs/ssh/setup_ssh_server.nu     # Setup SSH Server

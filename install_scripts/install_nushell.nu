@@ -2,7 +2,7 @@
 
 # Make sure programs are in $env.PATH
 try {
-  sudo ln -s ~/.cargo/bin /usr/local/bin
+  sudo ln -s ~/.cargo/bin/* /usr/local/bin/
 } catch {
   echo "already linked the cargo path"
 }
@@ -17,7 +17,8 @@ echo "Nushell changed to default shell"
 
 # Link Nushell Config Files
 try {
-  ln -s ~/.dotfiles/programs/nu ~/.config/nushell
+  mkdir ~/.config/nushell
+  ln -s ~/.dotfiles/programs/nu/* ~/.config/nushell/
 } catch {
   echo "already linked nu config files"
 }

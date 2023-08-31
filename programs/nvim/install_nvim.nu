@@ -13,3 +13,9 @@ try {
 }
 
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+
+try {
+  sudo ln -s .local/share/bob/nvim-bin/nvim /usr/local/bin/nvim
+} catch {
+
+}
