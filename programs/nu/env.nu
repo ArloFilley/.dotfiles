@@ -39,6 +39,7 @@ $env.NU_PLUGIN_DIRS = [
 try {
   mkdir ~/.cache/starship
   starship init nu | save -f ~/.cache/starship/init.nu
+  use ~/.cache/starship/init.nu
 } catch {
 
 }
